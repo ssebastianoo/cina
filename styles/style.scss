@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "San Francisco";
+  src: url("../assets/SFProDisplay-Regular.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d2d2e;
+  color: white;
+  font-family: "San Francisco";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+
+  h1 {
+    font-size: 70px;
+  }
+
+  img {
+    width: 100px;
+    margin-right: 20px;
+  }
+}
+
+.section-top-mask {
+  mask-image: linear-gradient(0deg, #000 450px, transparent);
+}
+
+.sections {
+  max-height: 70vh;
+  overflow: hidden;
+  mask-image: linear-gradient(180deg, #000 450px, transparent);
+  scroll-behavior: smooth;
+
+  .section {
+    margin: 20px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(odd) {
+      text-align: left;
+    }
+    &:nth-child(even) {
+      text-align: right;
+    }
+
+    h2 {
+      .emoji {
+        width: 24px;
+      }
+    }
+
+    .content {
+      width: 600px;
+
+      p {
+        width: 600px;
+      }
+    }
+  }
+}

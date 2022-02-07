@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "San Francisco";
+  src: url("../assets/SFProDisplay-Regular.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d2d2e;
+  color: white;
+  font-family: "San Francisco";
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+}
+
+header h1 {
+  font-size: 70px;
+}
+
+header img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.section-top-mask {
+  -webkit-mask-image: linear-gradient(0deg, #000 450px, transparent);
+          mask-image: linear-gradient(0deg, #000 450px, transparent);
+}
+
+.sections {
+  max-height: 70vh;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(180deg, #000 450px, transparent);
+          mask-image: linear-gradient(180deg, #000 450px, transparent);
+  scroll-behavior: smooth;
+}
+
+.sections .section {
+  margin: 20px;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sections .section:nth-child(odd) {
+  text-align: left;
+}
+
+.sections .section:nth-child(even) {
+  text-align: right;
+}
+
+.sections .section h2 .emoji {
+  width: 24px;
+}
+
+.sections .section .content {
+  width: 600px;
+}
+
+.sections .section .content p {
+  width: 600px;
+}
+/*# sourceMappingURL=style.css.map */
