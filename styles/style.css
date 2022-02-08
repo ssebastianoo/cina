@@ -15,8 +15,42 @@ body {
 
 body {
   background-color: #2d2d2e;
+  background-image: url("https://cdn.discordapp.com/attachments/938373773541924904/940731878950985788/wp2154124.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   font-family: "San Francisco";
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+nav .nav-item {
+  margin: 10px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+nav .nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav .nav-item:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 header {
@@ -35,7 +69,6 @@ header {
 header .header-content {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 header .header-content .title {
@@ -95,6 +128,9 @@ header .header-content .banner {
 
 .sections .section .content {
   width: 600px;
+  background-color: RGBA(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .sections .section .content p {
