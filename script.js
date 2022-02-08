@@ -39,7 +39,13 @@ window.addEventListener('keydown', (e) => {
 
 for (i=0; i<buttons.length; i++) {
     buttons[i].addEventListener('click', (e) => {
-        switch (e.target.id) {
+        let scrollEl;
+        if (!e.target.id) {
+            scrollEl = e.target.parentElement;
+        } else {
+            scrollEl = e.target;
+        }
+        switch (scrollEl.id) {
             case 'scrollUp':
                 scrolled--;
                 break;
@@ -47,6 +53,7 @@ for (i=0; i<buttons.length; i++) {
                 scrolled++;
                 break
         }
+        console.log(scrollEl);
         scroll();
     })
 }
