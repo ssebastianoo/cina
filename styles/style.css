@@ -29,7 +29,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 30vh;
+  height: 20vh;
 }
 
 header h1 {
@@ -47,7 +47,7 @@ header img {
 }
 
 .sections {
-  max-height: 70vh;
+  max-height: 60vh;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(180deg, #000 450px, transparent);
           mask-image: linear-gradient(180deg, #000 450px, transparent);
@@ -55,8 +55,8 @@ header img {
 }
 
 .sections .section {
-  margin: 20px;
-  height: 70vh;
+  margin: 0 20px;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,6 +85,33 @@ header img {
 }
 
 .sections .section .content p {
-  width: 600px;
+  max-width: 600px;
+}
+
+.scroll-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+}
+
+.scroll-buttons button {
+  margin: 0 20px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: font-size .3s;
+  transition: font-size .3s;
+}
+
+.scroll-buttons button:hover {
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */

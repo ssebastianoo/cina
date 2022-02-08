@@ -1,3 +1,6 @@
+$sectionHeight : 60vh;
+$edgeHeights: 40vh / 2;
+
 @font-face {
   font-family: "San Francisco";
   src: url("../assets/SFProDisplay-Regular.ttf") format("truetype");
@@ -23,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: $edgeHeights;
 
   h1 {
     font-size: 70px;
@@ -40,14 +43,14 @@ header {
 }
 
 .sections {
-  max-height: 70vh;
+  max-height: $sectionHeight;
   overflow: hidden;
   mask-image: linear-gradient(180deg, #000 450px, transparent);
   scroll-behavior: smooth;
 
   .section {
-    margin: 20px;
-    height: 70vh;
+    margin: 0 20px;
+    height: $sectionHeight;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,8 +72,28 @@ header {
       width: 600px;
 
       p {
-        width: 600px;
+        max-width: 600px;
       }
+    }
+  }
+}
+
+.scroll-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $edgeHeights;
+
+  button {
+    margin: 0 20px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: font-size .3s;
+
+    &:hover {
+      font-size: 50px;
     }
   }
 }
