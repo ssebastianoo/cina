@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="china.png" type="image/png" />
     <link rel="stylesheet" href="./styles/style.css" type="text/css" />
-    <base href="https://seba.gq/cina/">
     <script
       src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
       crossorigin="anonymous"
@@ -18,10 +17,10 @@
       <div class="header-content">
         <nav>
           <div class="nav-item">
-            <a href="/">Home</a>
+            <a href="./">Home</a>
           </div>
           <div class="nav-item">
-            <a href="/bibliografia.html">Bibliografia</a>
+            <a href="./bibliografia.html">Bibliografia</a>
           </div>
         </nav>
         <div class="title">
@@ -38,12 +37,14 @@
             <div class="content">
               <h2 v-if="section.title">{{section.title}}</h2>
               <p v-if="section.text">{{section.text}}</p>
-              <img
-                class="image"
-                v-if="section.image"
-                v-bind:src="section.image"
-                v-bind:alt="section.image"
-              />
+              <div class="image">
+                <img
+                  class="image"
+                  v-if="section.image"
+                  v-bind:src="section.image"
+                  v-bind:alt="section.image"
+                />
+              </div>
             </div>
           </div>
         </div>
