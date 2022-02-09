@@ -61,6 +61,9 @@ const SectionsManager = {
                     image: "https://cdn.discordapp.com/attachments/938373773541924904/940747250156593212/New_Project_-_2022-02-09T001326.707.png",
                 },
                 {
+                    text: "Verso il III secolo aC. l'agricoltura progredì, si diffuse la metallurgia e lentamente la scrittura. Allora si defini un primo nucleo di formazione statale, in cui il potere era amministrato da un re che svolgeva anche una funzione di sacerdote.",
+                },
+                {
                     title: "Filosofia",
                     text: "Le religioni praticate dai cinesi si possono distinguere in religioni indigene, come il confucianesimo o il taoismo.",
                     image: "https://cdn.discordapp.com/attachments/938373773541924904/940750344164606052/yin_yang_and_trigrams.png",
